@@ -1,0 +1,10 @@
+{%extends "blog/base.html"%}
+{%block content%}
+    <h1>Home</h1>
+    {% for post in posts%}
+        <a href="{%url 'blog-about'%}">{{post.title}}</a>
+        <h2>{{post.author}}</h2>
+        <p>{{post.content}}</p>
+        <p>{{post.date_posted|date:"F d Y"}}</p>
+    {%endfor%}
+{%endblock%}

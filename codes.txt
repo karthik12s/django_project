@@ -1,0 +1,19 @@
+To create project
+django-admin startproject django_project
+
+To create new app
+python3 manage.py startapp <appname>
+To create user for admin page
+python3 manage.py createsuperuser
+ 
+TO generate migrations and reflect it in code
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+To start the server
+
+python3 manage.py runserver  
+
+To run the python shell
+python3 manage.py shell
+
